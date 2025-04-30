@@ -20,7 +20,10 @@ const holdContainer = document.getElementById("hold-shape");
 
 // Блокын хэлбэрүүд
 const shapes = [
-  [``[(0, 1, 0)], [1, 1, 1]], // T хэлбэр
+  [
+    [0, 1, 0],
+    [1, 1, 1],
+  ], // T хэлбэр
   [
     [1, 1, 0],
     [0, 1, 1],
@@ -48,7 +51,7 @@ function updateLevel() {
   const newLevel = Math.floor(score / levelUpScore) + 1;
   if (newLevel > level) {
     level = newLevel;
-    setSpeed(speed - 50 * (level - 1)); // Хурдыг нэмэгдүүлнэ
+    setSpeed(speed - 13 * (level - 1)); // Хурдыг нэмэгдүүлнэ
     document.getElementById("level").textContent = level; // Дэлгэц дээр түвшинг харуулах
   }
 }
