@@ -4,39 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tetris Game</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./tetris.css" />
   </head>
 
   <body>
-    <p id="instructions">
-      <span class="big-text">Press "Start game" to play.</span><br />
-      (Otherwise it might not work as intended xD) <br />
-      Press 'shift' to hold a piece. Press 'shift' again to use it.
-    </p>
+    <!-- <div id="score-container">
+      
+    </div>
+    
     <main>
+      
+    </main>
+
+     -->
+
+    <main>
+      <div id="instructions">
+        <span class="big-text">"Эхлэх"</span><br />
+        товч дээр дарж тоглоно уу.
+        <br /><br />
+        'shift' дарж дүрс хадгална.<br />
+        Хадгалсан дүрсээ 'shift' дарж ашиглах бөгөөд дараагийн дүрс нь
+        автоматаар хадгалагдана.<br />
+        Тоглож байх үед оноо цуглуулах тусам дүрснүүд хурдтайгаар унана.
+        <br />
+        <span class="goodluck">Амжилт хүсье :)</span>
+      </div>
       <div id="game-container">
         <div id="hold-container">
-          <h3>Hold:</h3>
+          <h3>Хадгалах</h3>
           <div id="hold-shape"></div>
+          <h3>Оноо: <span id="score">0</span></h3>
+          <button onclick=" setSpeed(speed)">Эхлэх</button>
         </div>
         <div id="game-board"></div>
         <div id="next-shape-container">
           <h3>Дараагийн хэлбэр:</h3>
 
           <div id="next-shape"></div>
+          <div class="buttons">
+            <button onclick="location.reload()">Шинээр эхлэх</button>
+          </div>
         </div>
       </div>
+      <div class="right-side"></div>
     </main>
-    <div id="score-container">
-      <h3>Оноо: <span id="score">0</span></h3>
-    </div>
 
-    <div class="center" style="width: 280px; margin-inline: auto">
-      <button onclick=" setSpeed(speed)">Start Game</button>
-      <a href="https://enkhjin9127.github.io/Tetris-project/"
-        ><button>Restart</button></a
-      >
-    </div>
     <script src="./tetris.js"></script>
   </body>
 </html>

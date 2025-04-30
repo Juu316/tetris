@@ -1,22 +1,23 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background: linear-gradient(0deg, #6139a5 0%, #4570df 100%);
-  height: 90vh;
+  height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 main {
-  margin-top: 10vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 100px;
 }
 #instructions {
-  position: absolute;
-  left: 150px;
-  top: 150px;
-  width: 20vw;
   font-family: cursive;
   font-size: large;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .center {
   display: flex;
@@ -31,6 +32,7 @@ main {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  margin-top: 20px;
 }
 
 #game-board {
@@ -111,9 +113,7 @@ button {
   position: relative;
   text-align: left;
   text-decoration: none;
-  /* transition: box-shadow 0.15s, transform 0.15s; */
-  user-select: none;
-  -webkit-user-select: none;
+
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
@@ -158,4 +158,10 @@ button:active {
 
 .hold-cell.active {
   background-color: var(--color, #f39c12);
+}
+.buttons {
+  margin-top: 60px;
+}
+.goodluck {
+  color: deepskyblue;
 }
